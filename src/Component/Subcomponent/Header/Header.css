@@ -23,7 +23,7 @@
 }
 
 .LSS-div{
-    width: 20%;
+    width: 28%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,37 +32,101 @@
     align-items: center;
 }
 
-
-.Login-btn{
-    background-color: #212D45;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    width: 25%;
-    font-size: 15px;
-    font-family: inherit;
-    font-weight: 700;
-}
 .Sign-btn{
-    background-color: #3760FC;
+    background: linear-gradient(20deg,#2d6dfd,#604cfb);
+    box-shadow: inset 0 0 0 1px #ffffff1a, 0 10px 20px #4d57fc1f, 0 1px 0 2px #0000001a;
     color: #fff;
     border-radius: 10px;
     padding: 10px;
     width: 30%;
+    height: 45px;
     font-size: 15px;
     font-family: inherit;
     font-weight: 700;
+    touch-action: manipulation;
 }
 
-.fa-magnifying-glass{
-    color: #A0AFCF;
-    font-weight: 700;
+.Sign-btn:hover{
+    cursor: pointer;
 }
 
-.fa-grip-lines{
+.Sign-btn:active{
+    
+    cursor: pointer;
+    font-size: 10px;
+    box-shadow: inset 40px 40px 40px 40px #0a0a0a63, 0px 20px 10px #4d57fc1f, 0 1px 0px 2px #0000001a;
+    transition-delay: 100s;
+    transition: opacity 0.2s ease;
+    touch-action: manipulation;
+
+}
+
+
+.leftBtnDiv{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 30px;
+    /* padding: 10px; */
+
+}
+
+/* .fa-bars-staggered{
     color: #212D45;
     background-color: #A0AFCF;
     border-radius: 50%;
     padding: 5px;
+    width: 32px;
+    height: 28px;
     font-size: 12px;
+} */
+
+.fa-solid{
+
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+
+}
+
+
+@media (max-width : 576px) {
+
+    .Main-Header-Continer{
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .Logo-div img{
+
+        padding: 0px;
+
+    }
+
+    .LSS-div{
+
+        width: 100%;
+        padding-bottom: 10px;
+
+    }
+
+    .Sign-btn{
+
+        width: 25%;
+        height: 35px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    
+    
 }

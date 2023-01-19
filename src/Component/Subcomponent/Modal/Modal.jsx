@@ -59,8 +59,11 @@ export default function NestedModal() {
     };
 
     return (
-        <div>
-            <Button onClick={handleOpen} className="Login-Btn">Login</Button>
+        <div className='modalDiv'>
+            {/* <Button  className="Login-Btn">Login</Button> */}
+            <button onClick={handleOpen} className='Login-btn'>Log In</button>
+            
+
             <Modal
                 open={open}
                 onClose={handleClose}

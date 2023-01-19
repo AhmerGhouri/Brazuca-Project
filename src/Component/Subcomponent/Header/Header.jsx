@@ -1,9 +1,10 @@
 import React from 'react'
 import './Header.css';
 import Logo from '../../../Assets/Images/Logo/Logo1-removebg-preview.png'
-import NestedModal from '../Modal/Modal'
+import NestedModal from '../Modal/Modal';
+import SearchModal from '../Search Modal/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import PersistentDrawerLeft from '../Drawer/Drawer'
+import PersistentDrawerLeft from '../Sidebar/Drawer/Drawer'
 
 const Header = () => {
     return (
@@ -18,24 +19,26 @@ const Header = () => {
 
                 <div className='LSS-div'>
 
-                    {/* <NestedModal /> */}
 
 
 
-                    <button className='Login-btn'>Log In</button>
-                    <button className="Sign-btn">Sign Up</button>
+                    <div className='leftBtnDiv'>
 
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                        <NestedModal />
+                        <button className="Sign-btn">Sign Up</button>
+                        <SearchModal />
+                        <i class="fa-solid fa-bars-staggered"></i>
 
-                    <i class="fa-solid fa-grip-lines"></i>
+                        {/* <i class="fa-solid fa-magnifying-glass"></i> */}
 
-                    {/* <PersistentDrawerLeft /> */}
+
+                    </div>
 
                 </div>
 
             </div>
 
-            
+
 
 
         </div>

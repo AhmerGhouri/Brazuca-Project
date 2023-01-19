@@ -5,18 +5,28 @@ import Sidebar from '../../Subcomponent/Sidebar/Sidebar';
 const Home = () => {
   return (
     <div className='Main-Container'>
+
+      <div>
+
         <Header />
 
-        <div className="SM-div">
+      </div>
+
+      <div className="SM-div">
+
+
+        <div>
+
 
           <Sidebar />
 
+        </div>
 
-          <div class="Middle-content">
-
-          </div>
+        <div class="Middle-content">
 
         </div>
+
+      </div>
 
     </div>
   )
